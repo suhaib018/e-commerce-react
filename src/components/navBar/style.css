@@ -1,0 +1,25 @@
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Fixed quotes */
+  list-style: none;
+  gap: 15px;
+  padding: 15px 0;
+}
+@media only screen and (min-width: 600px) {
+  button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  button {
+    display: block;
+  }
+  ul {
+    flex-direction: column;
+    display: none;
+  }
+
+}
+

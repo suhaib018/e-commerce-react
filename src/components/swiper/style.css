@@ -1,0 +1,6 @@
+.swiper-pagination-bullet {
+  width: 16px; /* Width of the dash */
+  height: 2px; /* Height of the dash */
+  border-radius: 0; /* Remove border-radius to create a rectangular shape */
+  background: #000; /* Color of the dash */
+}
