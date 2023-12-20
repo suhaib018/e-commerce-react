@@ -1,0 +1,132 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Default for mobile */
+  row-gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+
+.cardGrid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.container .grid-container img {
+  justify-self: center;
+  align-self: center;
+  max-width: 100%; /* Ensures images are responsive */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.subCategoryButton{
+  padding: 5px;
+  height: 35px;
+  width: 90px;
+  color: #272727;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #272727;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+
+
+@media only screen and (min-width: 600px) { /* Adjust breakpoint as needed */
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* For larger screens */
+  }
+}
+
+@media only screen and (min-width: 960px) { /* Adjust breakpoint as needed */
+   .grid-container {
+    grid-template-columns: repeat(6, 1fr); /* For even larger screens */
+  }
+}
+
+
+@media (max-width: 1120px) {
+  .container .cardGrid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (max-width: 850px) {
+  .container .cardGrid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+@media (max-width: 400px) {
+  .container .cardGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+/* General styling for pagination container */
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 0;
+}
+
+/* Styling for each page item */
+.page-item {
+  margin: 0 5px;
+}
+
+/* Styling for the links within page items */
+.page-link {
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  color: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.page-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Styling for the active page */
+.active .page-link {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Styling for the '...' in pagination (break label) */
+.break-link {
+  cursor: default;
+}
+
+/* Additional styling for previous and next buttons if needed */
+.previousClassName, .nextClassName {
+  /* Your styles here */
+}
+
+/* Styling for each page item */
+.page-item {
+  margin: 0; /* Remove margins to eliminate gaps */
+  cursor: pointer;
+}

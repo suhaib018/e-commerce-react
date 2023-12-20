@@ -7,24 +7,32 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 const SwiperComponent = () => {
+  const colors = ['#FF5733', '#33FF57', '#3357FF', '#FF33F6', '#F6FF33']; // Array of colors
+
+const getRandomColor = () => {
+  const randomIndex = Math.floor(Math.random() * colors.length);
+  return colors[randomIndex];
+};
   return (
     <Swiper
     // install Swiper modules
     modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
     slidesPerView={1}
-    navigation
+    navigation={true}
     pagination={{ clickable: true }}
     loop={true}
     autoplay={{
-      delay: 2500, // Delay in milliseconds before transitioning to the next slide
-      disableOnInteraction: false // Continues autoplay after user interaction
+      delay: 2500,
+      disableOnInteraction: false
     }}
-    style={{ height: "20vh" }}
+    style={{ height: "40vh" }}
   >
-      <SwiperSlide><img src={ss} style={{width:"100%",height:"100%"}}/></SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
+       <SwiperSlide style={{ backgroundColor: getRandomColor() }}>
+        <img src={ss} style={{width:"100%",height:"100%"}}/>
+      </SwiperSlide>
+      <SwiperSlide style={{ backgroundColor: getRandomColor() }}>Slide 2</SwiperSlide>
+      <SwiperSlide style={{ backgroundColor: getRandomColor() }}>Slide 3</SwiperSlide>
+      <SwiperSlide style={{ backgroundColor: getRandomColor() }}>Slide 4</SwiperSlide>
       ...
     </Swiper>
   );

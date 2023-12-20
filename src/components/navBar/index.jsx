@@ -10,10 +10,10 @@ const NavBar = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const [isToggle, setIsToggle] = useState(false); // Start with menu closed
   return (
-    <nav >
+    <nav style={{position:"sticky",top:"0",background:"black",zIndex:"99",margin:"0",color:"white"}} >
       <div style={{display:"flex",gap:"10px"}}>
 
-        <button onClick={() => setIsToggle(!isToggle)}>
+        <button className="nav-button" onClick={() => setIsToggle(!isToggle)}>
           Responsive
         </button>
 
@@ -23,13 +23,13 @@ const NavBar = () => {
 
 
       </div>
-      <ul style={{ display: isMobile ? (isToggle ? 'flex' : 'none') : 'flex' }}>
+      <ul style={{ display: isMobile ? (isToggle ? 'flex' : 'none') : 'flex',margin:"0" }}>
 
-      <li style={{display:"flex",alignItems:"center"}}>
+      <li style={{display:"flex",alignItems:"center",gap:"5px"}}>
           <span>العربة</span>
           <ShoppingCartIcon/>
         </li>
-        <li style={{display:"flex",alignItems:"center"}}>
+        <li style={{display:"flex",alignItems:"center",gap:"5px"}}>
           <span>دخول</span>
          <LoginIcon/>
         </li>
