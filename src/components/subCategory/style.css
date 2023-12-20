@@ -1,0 +1,73 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+.container .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Default for mobile */
+  row-gap: 30px;
+}
+
+.container .cardGrid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.container .grid-container img {
+  justify-self: center;
+  align-self: center;
+  max-width: 100%; /* Ensures images are responsive */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.subCategoryButton{
+  padding: 5px;
+  height: 35px;
+  width: 90px;
+  color: #272727;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #272727;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+
+
+@media only screen and (min-width: 600px) { /* Adjust breakpoint as needed */
+  .container .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* For larger screens */
+  }
+}
+
+@media only screen and (min-width: 960px) { /* Adjust breakpoint as needed */
+  .container .grid-container {
+    grid-template-columns: repeat(6, 1fr); /* For even larger screens */
+  }
+}
+
+
+@media (max-width: 1120px) {
+  .container .cardGrid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (max-width: 850px) {
+  .container .cardGrid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+@media (max-width: 400px) {
+  .container .cardGrid {
+    grid-template-columns: 1fr;
+  }
+}

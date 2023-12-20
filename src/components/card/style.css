@@ -1,0 +1,10 @@
+.card-container{
+  justify-self:center;
+  width: 250px;
+  border-radius: 8px;
+  padding:15px;
+  display:flex;
+  flex-direction:column;
+  background-color:whitesmoke;
+  box-shadow:rgba(151, 151, 151, 0.5) 0px 2px 2px 0px;
+}
