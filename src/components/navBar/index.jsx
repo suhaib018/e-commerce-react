@@ -1,4 +1,4 @@
-import ss from "../../../public/assets/react.svg"
+import ss from "../../../public/assets/react.png"
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import LoginIcon from '@mui/icons-material/Login';
 import "./style.css"
@@ -19,7 +19,7 @@ const NavBar = () => {
 
 
             <input style={{width:"70%",display:!isMobile?"none":"flex"}}/>
-            <img src={ss} style={{display:!isMobile?"none":"flex"}}/>
+            <img src={ss} style={{display:!isMobile?"none":"flex",width:"50px",height:"50px"}}/>
 
 
       </div>
@@ -36,7 +36,7 @@ const NavBar = () => {
         <li style={{width:"70%",display:isMobile?"none":"flex"}} >
             <input style={{width:"100%"}}/>
         </li>
-        <li><img src={ss} style={{display:isMobile?"none":"flex"}}/></li>
+        <li><img src={ss} style={{display:isMobile?"none":"flex",width:"50px",height:"50px"}}/></li>
       </ul>
     </nav>
   )
