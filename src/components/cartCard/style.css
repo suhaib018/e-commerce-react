@@ -1,0 +1,36 @@
+.cart-container {
+  display: flex;
+  height: 229px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding-inline: 8px;
+  margin-block: 8px;
+}
+
+.cart-image {
+  flex: 1;
+}
+.product-details {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+.product-details-header,
+.product-price-and-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product-details-header button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+input[type="number" i]{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}

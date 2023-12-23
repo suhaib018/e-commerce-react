@@ -1,5 +1,5 @@
 import "./style.css";
-import ss from "../../../public/assets/react.svg";
+import ss from "../../../public/assets/react.png";
 import Card from "../card";
 const SubCategory = ({ buttonName, categoryName,isCard }) => {
   return (

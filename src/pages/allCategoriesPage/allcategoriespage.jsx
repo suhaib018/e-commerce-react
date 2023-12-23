@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ss from "../../../public/assets/react.svg";
+import ss from "../../../public/assets/react.png";
 import ReactPaginate from 'react-paginate';
 import "./style.css"
 import SubCategory from '../../components/subCategory';

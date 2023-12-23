@@ -1,7 +1,7 @@
 import { Navigation, Pagination, Scrollbar, A11y ,Autoplay} from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "./style.css"
-import ss from "../../../public/assets/react.svg"
+import ss from "../../../public/assets/react.png"
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -21,10 +21,6 @@ const getRandomColor = () => {
     navigation={true}
     pagination={{ clickable: true }}
     loop={true}
-    autoplay={{
-      delay: 2500,
-      disableOnInteraction: false
-    }}
     style={{ height: "40vh" }}
   >
        <SwiperSlide style={{ backgroundColor: getRandomColor() }}>

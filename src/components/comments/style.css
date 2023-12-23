@@ -1,0 +1,64 @@
+.comments{
+  padding-bottom: 12px;
+  border-radius: 7px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(151, 151, 151, 0.5);
+  margin-top: 20px;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap:8px;
+}
+
+.header .rating {
+  display: flex;
+  align-items: center;
+}
+
+.star{
+  color: yellow;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.comment-author{
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+.comment-author .star-svg{
+  color: yellow;
+}
+.container{
+  padding-inline:50px;
+}
+
+form textarea{
+  width: 100%;
+  border: 1px solid #979797;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  padding: 8px;
+}
+form button{
+  cursor: pointer;
+    text-align: center;
+    height: 45px;
+    border-radius: 9px;
+    border: none;
+    background-color: #272727;
+    color: #ffffff;
+    font-family: "Almarai";
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.post-author{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+

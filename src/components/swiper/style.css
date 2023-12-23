@@ -1,4 +1,4 @@
-/* Target the bullets inside the swiper-pagination container */
+Target the bullets inside the swiper-pagination container
 .swiper-pagination .swiper-pagination-bullet {
   width: 30px;
   height: 3px;

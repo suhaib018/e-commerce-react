@@ -1,0 +1,10 @@
+.react-simple-star-rating .star {
+  width: 3px; /* Custom width */
+  height: 3px; /* Custom height */
+}
+
+
+.star-svg{
+  height: 25px;
+  width: 25px;
+}
